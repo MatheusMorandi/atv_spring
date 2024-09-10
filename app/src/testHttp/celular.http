@@ -1,0 +1,39 @@
+@baseUrl = https://8080-matheusmorand-atvspring-lqnkap64d3r.ws-us116.gitpod.io/
+
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJBUEkgQ2VsdWxhcmVzIiwic3ViIjoidXNlciIsImV4cCI6MTcyNTk5MDkwMX0.bvm06pXpNbCInHy8hm77a501XOuwrdY18M4rXDoPfmw
+
+###
+
+GET {{baseUrl}}/celular
+Authorization: Bearer {{token}}
+
+###
+
+POST {{baseUrl}}/celular
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+
+    "modelo": "Redmi Note 13",
+    "marca": "Xiaomi"
+
+}
+
+###
+
+PUT {{baseUrl}}/celular/1
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+
+    "modelo": "Moto G4 Plus",
+    "marca": "Motorola"
+
+}
+
+###
+
+DELETE {{baseUrl}}/celular/1
+Authorization: Bearer {{token}}
